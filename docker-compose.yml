@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  cleanup:
+    build: .
+    container_name: cleanup-tool
+    image: cleanup-tool:latest
+    
+    # For GUI access, mount X11 socket (Linux)
+    volumes:
+      # Mount X11 socket for GUI (Linux)
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      # Mount host directories for cleanup
+      - ${HOME}/.conda:/root/.conda:ro
+      - ${HOME}/.cache/pip:/root/.cache/pip:rw
+      - /tmp:/tmp:rw
+      # Mount application data
+      - ./backups:/app/backups
+      - ./logs:/app/logs
+      - ./config:/app/config
+    
+    environment:
+      - DISPLAY=${DISPLAY}
+      - XAUTHORITY=/tmp/.docker.xauth
+      - PYTHONUNBUFFERED=1
+    
+    # Network mode for better host access
+    network_mode: host
+    
+    # Privileged mode may be needed for some system operations
+    # privileged: true
+    
+    # Alternative: Use VNC for remote access
+    ports:
+      - "5900:5900"  # VNC port
+    
+    # Keep container running
+    stdin_open: true
+    tty: true
+

@@ -1,0 +1,44 @@
+{
+  "theme": {
+    "light": {
+      "background": "#FFFFFF",
+      "surface": "#F5F5F5",
+      "primary": "#2196F3",
+      "secondary": "#FF9800",
+      "success": "#4CAF50",
+      "warning": "#FFC107",
+      "error": "#F44336",
+      "text_primary": "#212121",
+      "text_secondary": "#757575"
+    },
+    "dark": {
+      "background": "#121212",
+      "surface": "#1E1E1E",
+      "primary": "#64B5F6",
+      "secondary": "#FFB74D",
+      "success": "#81C784",
+      "warning": "#FFD54F",
+      "error": "#E57373",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#B0B0B0"
+    }
+  },
+  "spacing": {
+    "unit": 8,
+    "small": 4,
+    "medium": 8,
+    "large": 16,
+    "xlarge": 24
+  },
+  "typography": {
+    "font_family": "Segoe UI, Arial, sans-serif",
+    "sizes": {
+      "h1": 32,
+      "h2": 24,
+      "h3": 20,
+      "body": 14,
+      "caption": 12
+    }
+  }
+}
+

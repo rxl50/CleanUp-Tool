@@ -1,0 +1,39 @@
+{
+  "safety_levels": {
+    "user_data": "very_safe",
+    "caches": "moderate",
+    "temp_files": "moderate",
+    "environments": "moderate"
+  },
+  "protected_items": {
+    "conda_base": true,
+    "system_dirs": true,
+    "active_env": true
+  },
+  "backup_settings": {
+    "mandatory_backup": true,
+    "retention_days": 30,
+    "max_restore_points": 50,
+    "auto_cleanup": true,
+    "compress_backups": true,
+    "verify_backups": true
+  },
+  "ui_settings": {
+    "theme": "light",
+    "show_advanced": false,
+    "confirmations": true
+  },
+  "duplicate_detection": {
+    "default_method": "both",
+    "hash_algorithm": "md5"
+  },
+  "organize_tool": {
+    "enabled": true,
+    "config_path": "config/organize_rules.yaml"
+  },
+  "filters": {
+    "min_file_age_days": 30,
+    "large_file_threshold_mb": 100
+  }
+}
+

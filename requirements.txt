@@ -1,0 +1,20 @@
+# GUI Framework
+PyQt5>=5.15.0  # or PySide6>=6.5.0 (modern alternative)
+
+# Core Dependencies
+psutil>=5.9.0              # Process and system info
+send2trash>=1.8.0          # Safe file deletion
+tqdm>=4.65.0               # Progress bars
+Pillow>=10.0.0             # Image processing
+
+# File Organization
+organize-tool>=3.3.0       # File management automation
+pyyaml>=6.0                # YAML parsing
+
+# Backup and Utilities
+checksumdir>=1.2.0         # Directory checksums
+python-dateutil>=2.8.0     # Date utilities
+
+# Optional but Recommended
+watchdog>=3.0.0            # File system monitoring (future)
+

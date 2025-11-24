@@ -1,0 +1,3 @@
+# Additional requirements for building standalone executable
+PyInstaller>=5.13.0
+
