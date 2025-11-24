@@ -16,6 +16,20 @@
 
 A comprehensive GUI application for cleaning up disk space on your computer. Features automatic backup system, restore points, and support for cleaning Anaconda environments, pip cache, system temp files, browser caches, and more.
 
+## 🚀 Quick Start - Standalone Executable (Recommended)
+
+**No installation required!** A pre-built standalone executable is available:
+
+- **Download**: `CleanUpTool.exe` from the [Releases](../../releases) page or `dist/` folder
+- **Size**: ~65 MB (includes Python and all dependencies)
+- **Requirements**: Windows 10/11 (64-bit)
+- **Usage**: Simply double-click `CleanUpTool.exe` to run
+  - ⚠️ First run may be slower as it extracts files
+  - ⚠️ No Python installation needed
+  - ⚠️ No dependencies to install
+
+**This is the easiest way to use CleanUp Tool - just download and run!**
+
 ## ⚠️ Critical Safety Information
 
 ### Before You Start
@@ -63,12 +77,28 @@ A comprehensive GUI application for cleaning up disk space on your computer. Fea
 
 ## Installation
 
-### Prerequisites
+### Option 1: Standalone Executable (Easiest - Recommended)
+
+**For most users, this is the best option:**
+
+1. **Download** `CleanUpTool.exe` from the repository
+2. **Run** by double-clicking the executable
+3. **No installation or setup required!**
+
+The standalone executable includes everything needed to run the application. It's a single file (~65 MB) that works on any Windows 10/11 system without requiring Python or any other dependencies.
+
+⚠️ **Note**: The first run may take a few seconds longer as the executable extracts necessary files to a temporary location.
+
+### Option 2: Python Installation (For Development or Customization)
+
+If you want to run from source or modify the code:
+
+#### Prerequisites
 - Python 3.9 or higher
 - pip (Python package installer)
 - **Windows 10/11** (primary platform, Linux/Mac support may vary)
 
-### Quick Start
+#### Quick Start
 
 1. **Navigate to the project directory:**
    ```bash
@@ -116,9 +146,8 @@ python main.py
 ### First Time Setup
 
 1. **Launch the application:**
-   ```bash
-   python main.py
-   ```
+   - **Standalone**: Double-click `CleanUpTool.exe`
+   - **From Source**: Run `python main.py`
 
 2. **Review Settings**: Check the settings to configure:
    - Backup retention period
@@ -184,9 +213,11 @@ python main.py
 
 ⚠️ **Note**: Full restore functionality is in development. Currently, conda environments can be restored, but file restoration may be limited.
 
-## Standalone Executable
+## Building Standalone Executable (For Developers)
 
-Create a standalone executable that runs **without Python or Docker**:
+> **Note**: A pre-built executable is already available. You only need to build if you want to create your own version or modify the code.
+
+If you want to build the standalone executable yourself:
 
 ### Quick Build (Windows)
 
@@ -205,7 +236,7 @@ chmod +x build.sh
 ./build.sh
 ```
 
-See [STANDALONE_BUILD.md](STANDALONE_BUILD.md) for detailed instructions.
+See [STANDALONE_BUILD.md](STANDALONE_BUILD.md) for detailed build instructions.
 
 ## Docker Support
 
